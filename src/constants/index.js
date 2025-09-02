@@ -3,26 +3,22 @@ import {
   backend,
   creator,
   web,
-  javascript,
-  typescript,
   html,
   css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
   git,
-  figma,
   docker,
   meta,
   starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
-  threejs,
+  Keras,
+  NumPy,
+  OpenCV,
+  Pandas,
+  Python,
+  scikitlearn,
+  TensorFlow,
 } from "../assets";
 
 export const navLinks = [
@@ -42,24 +38,60 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Machine Learning Engineer",
+    icon: backend,
+  },
+  {
+    title: "Data Scientist",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Computer Vision Specialist",
     icon: mobile,
   },
   {
     title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
     icon: creator,
   },
 ];
 
 const technologies = [
+  {
+    name: "Python",
+    icon: Python,
+  },
+  {
+    name: "TensorFlow",
+    icon: TensorFlow,
+  },
+  {
+    name: "Scikit-learn",
+    icon: scikitlearn,
+  },
+  {
+    name: "OpenCV",
+    icon: OpenCV,
+  },
+  {
+    name: "Keras",
+    icon: Keras,
+  },
+  {
+    name: "Pandas",
+    icon: Pandas,
+  },
+  {
+    name: "NumPy",
+    icon: NumPy,
+  },
+  {
+    name: "Git",
+    icon: git,
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -68,171 +100,71 @@ const technologies = [
     name: "CSS 3",
     icon: css,
   },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Google Student Ambassador",
+    company_name: "Google",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "August 2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Hosting workshops on Google technologies like Cloud and AI to educate fellow students.",
+      "Mentoring peers and organizing events to grow the local tech community.",
+      "Acting as a liaison between the student body and Google's developer resources.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Community Coordinator",
+    company_name: "Versanix Technologies",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "March 2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Successfully developed and delivered a complete face recognition system, integrating machine learning models for core functionality.",
+      "Manage the company's digital presence, including all website updates, server maintenance, and content creation for the official LinkedIn page.",
     ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Project Derby",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An open-source face recognition platform for secure, frictionless access control, featuring anti-spoofing liveness detection and HR/Time & Attendance integration.",
     tags: [
       {
-        name: "react",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "TensorFlow",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "OpenCV",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Aayush-Deshpande/Project-Derby",
   },
   {
-    name: "Job IT",
+    name: "FedChain",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A decentralized platform combining Federated Learning and Blockchain to enable global model training without compromising data privacy. Features smart contract integration and AES-256 encryption for secure data flow.",
     tags: [
       {
-        name: "react",
+        name: "Blockchain",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Federated Learning",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Smart Contracts",
         color: "pink-text-gradient",
       },
     ],
@@ -240,25 +172,73 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "House Price Prediction",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A predictive model for house prices, built from scratch using only pure Python to implement the linear regression algorithm without relying on external machine learning libraries.",
     tags: [
       {
-        name: "nextjs",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Algorithm",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Data Science",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
     source_code_link: "https://github.com/",
+  },
+  {
+    name: "Versanix Technologies Website",
+    description:
+      "The official, fully responsive company website for Versanix Technologies, built to showcase the company's products and services to a global audience.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vercel",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://versanix.vercel.app/",
+  },
+];
+
+const testimonials = [
+  {
+    testimonial:
+      "Aayush's work on Project Derby is truly impressive. The face recognition platform is robust, secure, and showcases a deep understanding of modern computer vision challenges.",
+    name: "Shripad Punde",
+    designation: "Project Lead",
+    company: "Versanix Technologies",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
+  },
+  {
+    testimonial:
+      "FedChain is a game-changer. Aayush's innovative approach of combining Federated Learning with Blockchain solves critical data privacy issues in machine learning. A brilliantly executed project.",
+    name: "Divyanshu Swatantra",
+    designation: "Blockchain Developer",
+    company: "DEF Corp",
+    image: "https://randomuser.me/api/portraits/men/6.jpg",
+  },
+  {
+    testimonial:
+      "The official website Aayush built for Versanix is fantastic. He delivered a polished, professional, and highly responsive site that perfectly captures our brand's identity.",
+    name: "Shripad Punde",
+    designation: "Project Lead",
+    company: "Versanix Technologies",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
 ];
 
