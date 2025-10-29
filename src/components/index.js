@@ -1,3 +1,5 @@
+// src/components/index.js
+
 import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas';
 import Hero from "./Hero";
 import Navbar from "./Navbar";
@@ -8,7 +10,7 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
-
+import Certificates from './Certificates'; // <-- 1. IMPORT NEW COMPONENT
 
 export {
   Hero,
@@ -23,5 +25,6 @@ export {
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  Certificates // <-- 2. EXPORT NEW COMPONENT
 };

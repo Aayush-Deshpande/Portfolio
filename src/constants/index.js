@@ -19,8 +19,24 @@ import {
   Python,
   scikitlearn,
   TensorFlow,
+
+  // --- 1. CERTIFICATE IMPORTS ADDED ---
+  ai_projects,
+  ca,
+  dm,
+  ds_jpg,
+  ds_pdf,
+  founder,
+  full_stack,
+  gen_ai,
+  gsa,
+  lor,
+  nlp,
+  pl,
+  se,
 } from "../assets";
 
+// --- 2. 'navLinks' UPDATED ---
 export const navLinks = [
   {
     id: "about",
@@ -29,6 +45,10 @@ export const navLinks = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "certificates",
+    title: "Certificates",
   },
   {
     id: "contact",
@@ -242,4 +262,64 @@ const testimonials = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+// --- 3. 'certificates' ARRAY ADDED ---
+const certificates = [
+  {
+    title: "AI Projects",
+    file: ai_projects,
+  },
+  {
+    title: "RedHat Certificate",
+    file: ca,
+  },
+  {
+    title: "Digital Marketing",
+    file: dm,
+  },
+  {
+    title: "Data Science (JPG)",
+    file: ds_jpg,
+  },
+  {
+    title: "Founder Certificate",
+    file: founder,
+  },
+  {
+    title: "Full Stack Development",
+    file: full_stack,
+  },
+  {
+    title: "GenAI Foundations",
+    file: gen_ai,
+  },
+  {
+    title: "Google Student Ambassador",
+    file: gsa,
+  },
+  {
+    title: "Letter of Recommendation",
+    file: lor,
+  },
+  {
+    title: "Natural Language Processing",
+    file: nlp,
+  },
+  {
+    title: "Gotham-AI Founder",
+    file: pl,
+  },
+  {
+    title: "Software Engineering",
+    file: se,
+  },
+];
+
+// --- 4. FINAL EXPORT UPDATED ---
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  certificates, // <-- Added this
+};

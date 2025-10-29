@@ -10,6 +10,11 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  // --- YOUR LINKS ---
+  const linkedInUrl = "https://www.linkedin.com/in/aayushdeshpande-/";
+  const resumeUrl = "/resume.pdf"; // From /public/resume.pdf
+  // ------------------
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -49,7 +54,8 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        {/* === DESKTOP NAV === */}
+        <ul className='list-none hidden sm:flex flex-row items-center gap-10'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -61,8 +67,34 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+
+          {/* --- LINKEDIN LINK (DESKTOP) --- */}
+          <li>
+            <a
+              href={linkedInUrl}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-secondary hover:text-white text-[18px] font-medium cursor-pointer'
+            >
+              LinkedIn
+            </a>
+          </li>
+
+          {/* --- RESUME LINK (DESKTOP) --- */}
+          <li>
+            <a
+              href={resumeUrl}
+              download='Aayush-Deshpande-Resume.pdf' // Optional: sets the download filename
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-secondary hover:text-white text-[18px] font-medium cursor-pointer'
+            >
+              Resume
+            </a>
+          </li>
         </ul>
 
+        {/* === MOBILE NAV === */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
@@ -85,12 +117,41 @@ const Navbar = () => {
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(nav.title);
+                    setActive(nav.TItle);
                   }}
                 >
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+
+              {/* --- LINKEDIN LINK (MOBILE) --- */}
+              <li
+                className={`font-poppins font-medium cursor-pointer text-[16px] text-secondary`}
+                onClick={() => setToggle(!toggle)}
+              >
+                <a
+                  href={linkedInUrl}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  LinkedIn
+                </a>
+              </li>
+
+              {/* --- RESUME LINK (MOBILE) --- */}
+              <li
+                className={`font-poppins font-medium cursor-pointer text-[16px] text-secondary`}
+                onClick={() => setToggle(!toggle)}
+              >
+                <a
+                  href={resumeUrl}
+                  download='Aayush-Deshpande-Resume.pdf'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Resume
+                </a>
+              </li>
             </ul>
           </div>
         </div>

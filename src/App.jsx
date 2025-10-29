@@ -1,6 +1,19 @@
+// src/App.jsx
+
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import {
+  About,
+  Contact,
+  Experience,
+  Feedbacks,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  Certificates, // <-- 1. IMPORT IT
+  StarsCanvas,
+} from "./components";
 
 const App = () => {
   return (
@@ -14,6 +27,7 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
+        <Certificates /> {/* <-- 2. ADD IT HERE */}
         <Feedbacks />
         <div className='relative z-0'>
           <Contact />
@@ -22,6 +36,6 @@ const App = () => {
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
